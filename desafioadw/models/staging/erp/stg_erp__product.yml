@@ -1,0 +1,6 @@
+
+version: 2
+
+models:
+  - name: stg_erp__product
+    description: Staging with product data.

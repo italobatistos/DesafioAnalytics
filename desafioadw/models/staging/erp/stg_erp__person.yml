@@ -1,0 +1,6 @@
+
+version: 2
+
+models:
+  - name: stg_erp__person
+    description: Staging with person data.
