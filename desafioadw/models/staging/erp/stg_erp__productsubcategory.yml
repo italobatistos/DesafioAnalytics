@@ -1,0 +1,6 @@
+
+version: 2
+
+models:
+  - name: stg_erp__productsubcategory
+    description: Staging with product subcategory data.

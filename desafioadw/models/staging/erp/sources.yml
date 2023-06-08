@@ -1,0 +1,98 @@
+
+version: 2
+
+sources:
+  - name: erp
+    description: This model represents the source of AdventureWorks sales..
+    schema: desafioadw
+    tables: 
+
+      - name: creditcard
+        description: This table represents the name and id of creditcard.
+        columns:
+          - name: creditcardid
+            description: Primary key of creditcard table.
+            tests:
+              - unique
+              - not_null
+
+      - name: salesterritory
+        description: This table represents the names of the territories.
+        columns:
+          - name: territoryid
+            description: Primary key of salesterritory table.
+            tests:
+              - unique
+              - not_null
+
+      - name: customer
+        description: This table represents customer.
+        columns:
+          - name: customerid
+            description: Primary key of customer table.
+            tests:
+              - unique
+              - not_null
+
+      - name: person
+        description: This table represents customer names.
+        columns:
+          - name: businessentityid
+            description: Primary key of person table.
+            tests:
+              - unique
+              - not_null
+
+      - name: product
+        description: This table represents product description.
+        columns:
+          - name: productid
+            description: Primary key of product table.
+            tests:
+              - unique
+              - not_null
+
+      - name: salesorderheadersalesreason
+        description: This table represents sales reason description.
+
+      - name: salesreason
+        description: This table represents sales reason description.
+        columns:
+          - name: salesreasonid
+            description: Primary key of salesreason table.
+            tests:
+              - unique
+              - not_null
+
+      - name: salesorderheader
+        description: This table represents sales header description.
+        columns:
+          - name: salesorderid
+            description: Primary key of salesorderheader table.
+            tests:
+              - unique
+              - not_null
+
+      - name: salesorderdetail
+        description: This table represents sales header description.
+        columns:
+          - name: salesorderdetailid
+            description: Primary key of salesorderdetail table.
+            tests:
+              - unique
+              - not_null
+
+      - name: productcategory
+        description: This table represents sales header description.
+
+      - name: productsubcategory
+        description: This table represents sales header description.
+
+      - name: shipmethod
+        description: This table represents sales header description.
+
+      - name: address
+        description: This table represents sales header description.
+
+      - name: stateprovince
+        description: This table represents sales header description.

@@ -1,0 +1,6 @@
+
+version: 2
+
+models:
+  - name: stg_erp__stateprovince
+    description: Staging with state and province data.

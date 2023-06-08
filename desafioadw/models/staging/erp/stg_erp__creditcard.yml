@@ -1,0 +1,6 @@
+
+version: 2
+
+models:
+  - name: stg_erp__creditcard
+    description: Staging with creditcard data.
