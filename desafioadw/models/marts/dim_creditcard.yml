@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+  - name: dim_creditcard
+    description: Dimension with creditcard data.
+    columns:
+      - name: sk_creditcard
+        description: Table surrogate key.
+        tests:
+          - unique
+          - not_null
+
+      - name: cardtype_name
+        description: Card type name table.

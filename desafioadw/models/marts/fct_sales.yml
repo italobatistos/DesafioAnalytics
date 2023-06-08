@@ -1,0 +1,95 @@
+
+version: 2
+
+models:
+  - name: fct_sales
+    description: Dimension with sales data.
+    columns:
+      - name: sk_sales
+        description: Table surrogate key.
+        tests:
+          - unique
+          - not_null
+      
+      - name: id_customer
+        description: Customer identification table.
+        tests:
+          - not_null
+
+      - name: id_territory
+        description: Territory identification table.
+        tests:
+          - not_null
+
+      - name: id_shipmethod
+        description: Ship method identification table.
+        tests:
+          - not_null
+
+      - name: id_creditcard
+        description: Creditcard identification table.
+
+      - name: id_product
+        description: Product identification table.
+        tests:
+          - not_null
+
+      - name: id_productsubcategory
+        description: Product subcategory identification table.
+        tests:
+          - not_null
+
+      - name: order_date
+        description: Order date table.
+        tests:
+          - not_null
+      
+      - name: region_name
+        description: Region name table.
+        tests:
+          - not_null
+
+      - name: cardtype_name
+        description: Card type name table.
+        tests:
+          - not_null
+
+      - name: orderflag
+        description: Order flag table.
+        tests:
+          - not_null
+
+      - name: status_st
+        description: Status table.
+        tests:
+          - not_null
+
+      - name: shipmethod_name
+        description: Ship method name table.
+        tests:
+          - not_null
+
+      - name: product_name
+        description: Product name table.
+        tests:
+          - not_null
+      
+      - name: order_qty
+        description: Order quantity table.
+        tests:
+          - not_null
+
+      - name: unit_price
+        description: Unit price products table.
+        tests:
+          - not_null
+
+      - name: price_discount
+        description: Discount price products table.
+        tests:
+          - not_null
+
+      - name: freight_fg
+        description: Freight table.
+        tests:
+          - not_null

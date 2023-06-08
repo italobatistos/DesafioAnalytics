@@ -1,0 +1,18 @@
+
+version: 2
+
+models:
+  - name: dim_salesterritory
+    description: Dimension with territory sales data.
+    columns:
+      - name: sk_territory
+        description: Table surrogate key.
+        tests:
+          - unique
+          - not_null
+
+      - name: region_name
+        description: Region name table.
+        
+      - name: region_code
+        description: Region code table.

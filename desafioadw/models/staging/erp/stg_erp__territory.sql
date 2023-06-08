@@ -4,8 +4,7 @@ with
         select          	
             cast(territoryid as int) as id_territory				
             , cast(name	as string) as region_name	
-            , cast(countryregioncode as string)	as region_code
-            , cast(region as string) as region_group				
+            , cast(countryregioncode as string)	as region_code			
         from {{ source('erp','salesterritory') }}
     )
 
