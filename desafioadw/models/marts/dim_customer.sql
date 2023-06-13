@@ -1,30 +1,29 @@
 
 with 
-    customer as (
-        select *
-        from {{ ref('stg_erp__customer')}}
-    )
-
-    ,person as (
+    person as (
         select *
         from {{ ref('stg_erp__person')}}
     )
 
+    , customer as (
+        select *
+        from {{ ref('stg_erp__customer')}}
+    )
+
     , join_tables as (
         select
-            customer.id_customer
-            , customer.id_store
+            person.id_businessentity
+            , customer.id_customer
+            , customer.id_person
             , customer.id_territory
-            , person.id_businessentity
-            , person.name
-        from customer
-        left join person on
-            customer.id_customer = person.id_businessentity
+            , person.name_customer
+        from person
+        inner join customer on person.id_businessentity = customer.id_person
     )
 
     , transformations as (
         select
-            row_number() over (order by id_customer) as sk_customer
+            row_number() over (order by id_businessentity) as sk_customer
             , *
         from join_tables
     )

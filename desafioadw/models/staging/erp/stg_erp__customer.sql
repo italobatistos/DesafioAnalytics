@@ -3,7 +3,7 @@ with
     source_customer as (
         select          	
             cast(customerid	as int)	as id_customer						
-            ,cast(storeid as int) as id_store
+            ,cast(personid as int) as id_person
             ,cast(territoryid as int) as id_territory								
         from {{ source('erp','customer') }}
     )

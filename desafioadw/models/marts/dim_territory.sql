@@ -2,36 +2,25 @@
 with
     territory as (
         select *
-        from{{ ref('stg_erp__territory')}}
+        from{{ ref('int_address__territory')}}
     )
-
-    , address as (
+    , businessentityaddress as (
         select *
-        from{{ ref('stg_erp__address')}}
-    )
-
-    , stateprovince as (
-        select *
-        from{{ ref('stg_erp__stateprovince')}}
+        from{{ ref('stg_erp__businessentityaddress')}}
     )
 
     , join_territory as (
         select
-            stateprovince.id_territory
-            , stateprovince.state
-            , address.city
-            , territory.region_name as country
-        from stateprovince
-        left join address on stateprovince.id_stateprovince = address.id_stateprovince
-        left join territory on stateprovince.id_territory = territory.id_territory
-    )
-
-    , transformations as (
-        select
-            row_number() over (order by id_territory) as sk_territory
-            , *
-        from join_territory
+            territory.id_territory
+            , businessentityaddress.id_businessentity
+            , territory.id_adrress
+            , territory.country_regioncode
+            , territory.city
+            , territory.state
+            , territory.country_name
+        from territory
+        inner join businessentityaddress on territory.id_adrress = businessentityaddress.id_adrress
     )
 
 select *
-from transformations
+from join_territory

@@ -1,11 +1,6 @@
 
 with
-    shipmethod as (
-        select *
-        from {{ ref('stg_erp__shipmethod') }}
-    )
-
-    , orderdetail as (
+    orderdetail as (
         select *
         from {{ ref('stg_erp__orderdetail') }}
     )
@@ -26,7 +21,6 @@ with
             , orderheader.order_date
             , orderheader.orderflag
             , orderheader.status_st
-            , shipmethod.shipmethod_name
             , orderdetail.order_qty
             , orderdetail.unit_price
             , orderdetail.price_discount
@@ -34,8 +28,6 @@ with
         from orderheader
         left join orderdetail on
             orderheader.id_salesorder = orderdetail.id_salesorder
-        left join shipmethod on
-            orderheader.id_shipmethod = shipmethod.id_shipmethod
        
     )
 

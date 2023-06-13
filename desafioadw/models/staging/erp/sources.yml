@@ -96,3 +96,9 @@ sources:
 
       - name: stateprovince
         description: This table represents sales header description.
+
+      - name: countryregion
+        description: This table represents sales header description.
+      
+      - name: businessentityaddress
+        description: This table represents sales header description.
