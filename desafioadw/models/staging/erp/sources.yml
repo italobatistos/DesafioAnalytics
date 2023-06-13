@@ -4,7 +4,7 @@ version: 2
 sources:
   - name: erp
     description: This model represents the source of AdventureWorks sales..
-    schema: desafioadw
+    schema: dev_italo
     tables: 
 
       - name: creditcard

@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+  - name: dim_territory
+    description: Dimension with territory data.
+    columns:
+      - name: sk_territory
+        description: Table surrogate key.
+        tests:
+          - unique
+          - not_null
+
+      - name: state
+        description: State name table.
+        
+      - name: city
+        description: City name table.
+
+      - name: country
+        description: Country name table.

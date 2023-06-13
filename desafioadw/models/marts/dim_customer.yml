@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+  - name: dim_customer
+    description: Dimension with creditcard data.
+    columns:
+      - name: sk_customer
+        description: Table surrogate key.
+        tests:
+          - unique
+          - not_null
+
+      - name: id_store
+        description: Store identification table.
+
+      - name: id_territory
+        description: Territory identification table.
+
+      - name: id_businessentity
+        description: Businessentity identification table.
+      
+      - name: name
+        description: Name customer table.
