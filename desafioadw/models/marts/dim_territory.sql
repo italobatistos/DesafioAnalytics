@@ -13,14 +13,21 @@ with
         select
             territory.id_territory
             , businessentityaddress.id_businessentity
-            , territory.id_adrress
+            , territory.id_address
             , territory.country_regioncode
             , territory.city
             , territory.state
             , territory.country_name
         from territory
-        inner join businessentityaddress on territory.id_adrress = businessentityaddress.id_adrress
+        inner join businessentityaddress on territory.id_address = businessentityaddress.id_address
+    )
+
+    , transformations as (
+        select
+            row_number() over (order by id_territory) as sk_territory
+            , *
+        from join_territory
     )
 
 select *
-from join_territory
+from transformations

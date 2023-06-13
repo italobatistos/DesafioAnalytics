@@ -54,6 +54,15 @@ sources:
 
       - name: salesorderheadersalesreason
         description: This table represents sales reason description.
+        columns:
+          - name: salesorderid
+            description: Primary key of sales order header sales reason table.
+            tests:
+              - not_null
+          - name: salesreasonid
+            description: key of sales order header sales reason table.
+            tests:
+              - not_null
 
       - name: salesreason
         description: This table represents sales reason description.
@@ -83,22 +92,55 @@ sources:
               - not_null
 
       - name: productcategory
-        description: This table represents sales header description.
+        description: This table represents product category description.
+        columns:
+          - name: productcategoryid
+            description: Primary key of productcategoryid table.
+            tests:
+              - unique
+              - not_null
 
       - name: productsubcategory
-        description: This table represents sales header description.
-
-      - name: shipmethod
-        description: This table represents sales header description.
+        description: This table represents product subcategory description.
+        columns:
+          - name: productsubcategoryid
+            description: Primary key of product subcategory table.
+            tests:
+              - unique
+              - not_null
 
       - name: address
-        description: This table represents sales header description.
+        description: This table represents address description.
+        columns:
+          - name: addressid
+            description: Primary key of addres table.
+            tests:
+              - unique
+              - not_null
 
       - name: stateprovince
-        description: This table represents sales header description.
+        description: This table represents state and province description.
+        columns:
+          - name: stateprovinceid
+            description: Primary key of staten and province table.
+            tests:
+              - unique
+              - not_null
 
       - name: countryregion
-        description: This table represents sales header description.
+        description: This table represents country and region description.
+        columns:
+          - name: countryregioncode
+            description: Key of country and region table.
+            tests:
+              - unique
+              - not_null
       
       - name: businessentityaddress
-        description: This table represents sales header description.
+        description: This table represents business entity address description.
+        columns:
+          - name: addressid
+            description: Primary key of business entity  addres table.
+            tests:
+              - unique
+              - not_null

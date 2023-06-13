@@ -23,7 +23,7 @@ with
     , join_territory as (
         select
             stateprovince.id_territory
-            , address.id_adrress
+            , address.id_address
             , countryregioncode.country_regioncode
             , address.city
             , stateprovince.state

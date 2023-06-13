@@ -10,19 +10,24 @@ models:
         tests:
           - unique
           - not_null
+
+      - name: id_salesorder
+        description: Sales order identification table.
+        tests:
+          - not_null
       
       - name: id_customer
         description: Customer identification table.
         tests:
           - not_null
-
-      - name: id_territory
-        description: Territory identification table.
+      
+      - name: id_person
+        description: Person identification table.
         tests:
           - not_null
 
-      - name: id_shipmethod
-        description: Ship method identification table.
+      - name: id_territory
+        description: Territory identification table.
         tests:
           - not_null
 
@@ -34,23 +39,8 @@ models:
         tests:
           - not_null
 
-      - name: id_productsubcategory
-        description: Product subcategory identification table.
-        tests:
-          - not_null
-
       - name: order_date
         description: Order date table.
-        tests:
-          - not_null
-      
-      - name: region_name
-        description: Region name table.
-        tests:
-          - not_null
-
-      - name: cardtype_name
-        description: Card type name table.
         tests:
           - not_null
 
@@ -61,16 +51,6 @@ models:
 
       - name: status_st
         description: Status table.
-        tests:
-          - not_null
-
-      - name: shipmethod_name
-        description: Ship method name table.
-        tests:
-          - not_null
-
-      - name: product_name
-        description: Product name table.
         tests:
           - not_null
       

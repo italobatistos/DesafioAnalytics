@@ -30,7 +30,7 @@ with
 
     , transformations as (
         select
-            row_number() over (order by id_productsubcategory) as sk_subcatproducts
+            row_number() over (order by id_product) as sk_products
             , *
         from join_products
     )

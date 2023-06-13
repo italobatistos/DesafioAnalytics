@@ -20,11 +20,6 @@ models:
         tests:
           - not_null
 
-      - name: id_shipmethod
-        description: Ship method identification table.
-        tests:
-          - not_null
-
       - name: id_creditcard
         description: Creditcard identification table.
 
@@ -45,11 +40,6 @@ models:
 
       - name: status_st
         description: Status table.
-        tests:
-          - not_null
-
-      - name: shipmethod_name
-        description: Ship method name table.
         tests:
           - not_null
 

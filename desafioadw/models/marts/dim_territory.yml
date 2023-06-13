@@ -11,11 +11,20 @@ models:
           - unique
           - not_null
 
-      - name: state
-        description: State name table.
-        
+      - name: id_businessentity
+        description: Business entity identification table.
+
+      - name: id_address
+        description: Address identification table.
+
+      - name: country_regioncode
+        description: Country region code name table.
+      
       - name: city
         description: City name table.
 
-      - name: country
+      - name: state
+        description: State name table.
+    
+      - name: country_name
         description: Country name table.

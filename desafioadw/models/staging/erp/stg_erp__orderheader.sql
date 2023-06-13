@@ -2,12 +2,12 @@
 with
     source_salesorderheader as (
         select          		
-            cast(salesorderid as int) as id_salesorder								
-            , cast(orderdate as datetime) as order_date								
+            cast(salesorderid as int) as id_salesorder															
             , cast(customerid as int) as id_customer			 				
             , cast(territoryid as int) as id_territory		
             , cast(shipmethodid as int) as id_shipmethod			
-            , cast(creditcardid as int) as id_creditcard											
+            , cast(creditcardid as int) as id_creditcard
+            , cast(orderdate as datetime) as order_date											
             , cast(subtotal as numeric) as sub_total				
             , cast(taxamt as numeric) as tax_amt				
             , cast(freight as numeric) as freight_fg					
