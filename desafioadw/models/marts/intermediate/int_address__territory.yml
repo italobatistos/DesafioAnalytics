@@ -1,0 +1,38 @@
+
+version: 2
+
+models:
+  - name: int_address__territory
+    description: Dimension with address and territory data.
+    columns:
+      - name: id_territory
+        description: Table surrogate key.
+        tests:
+          - not_null
+      
+      - name: id_address
+        description: Address identification table.
+        tests:
+
+      - name: country_regioncode
+        description: Country region code table.
+        tests:
+          - not_null
+
+      - name: city
+        description: City table.
+
+      - name: state
+        description: State table.
+        tests:
+          - not_null
+
+      - name: country_name
+        description: Country name table.
+        tests:
+          - not_null
+
+      - name: country
+        description: Country table.
+        tests:
+          - not_null

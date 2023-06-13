@@ -10,15 +10,15 @@ models:
         tests:
           - unique
           - not_null
+      
+      - name: id_customer
+        description: Customer identification key.
 
-      - name: id_store
-        description: Store identification table.
+      - name: id_person
+        description: Person identification key.
 
       - name: id_territory
         description: Territory identification table.
-
-      - name: id_businessentity
-        description: Businessentity identification table.
       
-      - name: name
+      - name: name_customer
         description: Name customer table.

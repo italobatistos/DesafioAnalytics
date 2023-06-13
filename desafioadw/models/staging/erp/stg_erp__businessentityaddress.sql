@@ -3,7 +3,7 @@ with
     source_businessentityaddress as (
         select          							
             cast(businessentityid as int) as id_businessentity
-            , cast(addressid as int) as id_adrress
+            , cast(addressid as int) as id_address
         from {{ source('erp','businessentityaddress') }}
     )
 

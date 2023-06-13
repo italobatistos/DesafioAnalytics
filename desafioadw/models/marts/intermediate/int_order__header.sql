@@ -15,7 +15,6 @@ with
             orderdetail.id_salesorder
             , orderheader.id_customer
             , orderheader.id_territory
-            , orderheader.id_shipmethod
             , orderheader.id_creditcard
             , orderdetail.id_product
             , orderheader.order_date

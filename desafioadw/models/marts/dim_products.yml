@@ -11,10 +11,18 @@ models:
           - unique
           - not_null
 
+      - name: id_productcategory
+        description: Product category identification table.
+
       - name: id_productsubcategory
         description: Product subcategory identification table.
-        tests:
       
       - name: product_name
         description: Product name table.
+
+      - name: productcategory_name
+        description: Product category name table.
+
+      - name: subcategory_name
+        description: Product subcategory name table.
 

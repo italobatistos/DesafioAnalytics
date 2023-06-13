@@ -16,7 +16,6 @@ with
             , sales.id_customer
             , customer.id_person
             , sales.id_territory
-            , sales.id_shipmethod
             , sales.id_creditcard
             , sales.id_product
             , sales.order_date
@@ -32,7 +31,7 @@ with
 
     , transformations as (
         select
-            {{ dbt_utils.generate_surrogate_key(['id_salesorder', 'id_product' ]) }} as fk_sales
+            {{ dbt_utils.generate_surrogate_key(['id_salesorder', 'id_product' ]) }} as sk_sales
             , *
             , order_qty * unit_price as total_bruto
             , (1-price_discount) * order_qty * unit_price as total_liquido
