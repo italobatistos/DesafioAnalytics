@@ -5,19 +5,19 @@ models:
   - name: dim_territory
     description: Dimension with territory data.
     columns:
-      - name: sk_territory
+      - name: sk_state_province
         description: Table surrogate key.
         tests:
           - unique
           - not_null
 
-      - name: id_businessentity
+      - name: id_business_entity
         description: Business entity identification table.
 
       - name: id_address
         description: Address identification table.
 
-      - name: country_regioncode
+      - name: country_region_code
         description: Country region code name table.
       
       - name: city

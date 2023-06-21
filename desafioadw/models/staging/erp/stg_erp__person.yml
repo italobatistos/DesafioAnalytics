@@ -4,3 +4,9 @@ version: 2
 models:
   - name: stg_erp__person
     description: Staging with person data.
+    columns:    
+      - name: id_business_entity	
+        description: Business entity identification key.
+
+      - name: name_customer
+        description: Name customer table.

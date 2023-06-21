@@ -5,17 +5,17 @@ models:
   - name: dim_reason
     description: Dimension with reason sales data.
     columns:
-      - name: sk_salesreason
+      - name: sk_sales_reason
         description: Table surrogate key.
         tests:
           - unique
           - not_null
 
-      - name: id_salesreason
+      - name: id_sales_reason
         description: Sales reason identification table.
         tests:
       
-      - name: id_salesorder
+      - name: id_sales_order
         description: Sales order identification table.
 
       - name: reason_name

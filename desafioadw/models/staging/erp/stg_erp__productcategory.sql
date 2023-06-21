@@ -2,8 +2,8 @@
 with
     source_productcategory as (
         select          		
-			cast(productcategoryid as int) as id_productcategory
-            , cast(name as string) as productcategory_name		
+			cast(productcategoryid as int) as id_product_category
+            , cast(name as string) as product_category_name		
         from {{ source('erp','productcategory') }}
     )
 

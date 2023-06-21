@@ -17,14 +17,14 @@ with
     , join_products as (
         select
             products.id_product
-            , subcategory.id_productcategory
-            , subcategory.id_productsubcategory
+            , subcategory.id_product_category
+            , subcategory.id_product_subcategory
             , products.product_name
-            , category.productcategory_name 
+            , category.product_category_name 
             , subcategory.subcategory_name     
         from subcategory
-        left join category on subcategory.id_productcategory = category.id_productcategory
-        left join products on subcategory.id_productsubcategory = products.id_productsubcategory
+        left join category on subcategory.id_product_category = category.id_product_category
+        left join products on subcategory.id_product_subcategory = products.id_product_subcategory
     )
 
 

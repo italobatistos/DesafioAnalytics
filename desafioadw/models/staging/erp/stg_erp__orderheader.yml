@@ -4,3 +4,30 @@ version: 2
 models:
   - name: stg_erp__orderheader
     description: Staging with order header data.
+    columns:
+      - name: id_sales_order
+        description: Sales order identification table.
+
+      - name: id_customer
+        description: Customer identification table.
+      
+      - name: id_bill_to_address
+        description: Bill to address identification table.
+
+      - name: id_ship_method
+        description: Ship method identification table.
+
+      - name: id_creditcard
+        description: Creditcard identification table.
+
+      - name: order_date
+        description: Order date table.
+
+      - name: freight_fg
+        description: Freight table.
+
+      - name: status_st
+        description: Status table.
+      
+      - name: orderflag
+        description: orderflag identification table.

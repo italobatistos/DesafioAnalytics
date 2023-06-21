@@ -4,3 +4,9 @@ version: 2
 models:
   - name: stg_erp__countryregion
     description: Staging with country region data.
+    columns:
+      - name: country_region_code
+        description: Country region code name table.
+    
+      - name: country_name
+        description: Country name table.

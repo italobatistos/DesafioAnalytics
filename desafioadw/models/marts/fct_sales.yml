@@ -11,7 +11,7 @@ models:
           - unique
           - not_null
 
-      - name: id_salesorder
+      - name: id_sales_order
         description: Sales order identification table.
         tests:
           - not_null
@@ -25,9 +25,14 @@ models:
         description: Person identification table.
         tests:
           - not_null
+      
+      - name: id_address
+        description: Address identification table.
+        tests:
+          - not_null
 
-      - name: id_territory
-        description: Territory identification table.
+      - name: id_state_province
+        description: State province identification table.
         tests:
           - not_null
 

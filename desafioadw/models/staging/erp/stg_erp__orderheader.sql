@@ -2,16 +2,13 @@
 with
     source_salesorderheader as (
         select          		
-            cast(salesorderid as int) as id_salesorder															
+            cast(salesorderid as int) as id_sales_order															
             , cast(customerid as int) as id_customer			 				
-            , cast(territoryid as int) as id_territory		
-            , cast(shipmethodid as int) as id_shipmethod			
+            , cast(billtoaddressid as int) as id_bill_to_address		
+            , cast(shipmethodid as int) as id_ship_method			
             , cast(creditcardid as int) as id_creditcard
-            , cast(orderdate as datetime) as order_date											
-            , cast(subtotal as numeric) as sub_total				
-            , cast(taxamt as numeric) as tax_amt				
+            , cast(orderdate as datetime) as order_date															
             , cast(freight as numeric) as freight_fg					
-            , cast(totaldue as numeric) as total_due
             , case
                 when status = 1 then 'In process'
                 when status = 2 then 'Aprroved'

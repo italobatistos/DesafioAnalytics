@@ -4,3 +4,12 @@ version: 2
 models:
   - name: stg_erp__address
     description: Staging with address data.
+    columns:
+      - name: id_address
+        description: Address identification table.
+    
+      - name: id_state_province
+        description: State province name table.
+      
+      - name: city
+        description: City name table.

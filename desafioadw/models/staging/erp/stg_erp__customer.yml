@@ -4,3 +4,12 @@ version: 2
 models:
   - name: stg_erp__customer
     description: Staging with customers data.
+    columns:     
+      - name: id_customer
+        description: Customer identification key.
+
+      - name: id_person
+        description: Person identification key.
+
+      - name: id_territory
+        description: Territory identification table.
