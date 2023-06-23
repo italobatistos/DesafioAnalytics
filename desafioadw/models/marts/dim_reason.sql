@@ -10,7 +10,7 @@ with
         from {{ ref('stg_erp__salesreason')}}
     )
 
-    , join_tables as (
+    , join_reason as (
         select
             orderreason.id_sales_reason as sk_reason
             ,salesreason.id_sales_reason
@@ -25,7 +25,7 @@ with
         select
             row_number() over (order by sk_reason) as sk_sales_reason
             , *
-        from join_tables
+        from join_reason
     )
 
 select *

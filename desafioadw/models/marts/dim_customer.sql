@@ -10,7 +10,7 @@ with
         from {{ ref('stg_erp__customer')}}
     )
 
-    , join_tables as (
+    , join_customer as (
         select
             person.id_business_entity
             , customer.id_person
@@ -25,7 +25,7 @@ with
         select
             row_number() over (order by id_business_entity) as sk_customer
             , *
-        from join_tables
+        from join_customer
     )
 
 select *
