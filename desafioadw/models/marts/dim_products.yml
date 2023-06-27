@@ -11,16 +11,16 @@ models:
           - unique
           - not_null
 
-      - name: id_productcategory
+      - name: id_product_category
         description: Product category identification table.
 
-      - name: id_productsubcategory
+      - name: id_product_subcategory
         description: Product subcategory identification table.
       
       - name: product_name
         description: Product name table.
 
-      - name: productcategory_name
+      - name: product_category_name
         description: Product category name table.
 
       - name: subcategory_name

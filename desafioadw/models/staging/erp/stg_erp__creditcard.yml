@@ -4,3 +4,9 @@ version: 2
 models:
   - name: stg_erp__creditcard
     description: Staging with creditcard data.
+    columns:
+      - name: id_creditcard
+        description: Creditcard identification table.
+
+      - name: card_type_name
+        description: Card type name table.

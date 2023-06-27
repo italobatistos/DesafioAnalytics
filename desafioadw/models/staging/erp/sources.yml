@@ -16,15 +16,6 @@ sources:
               - unique
               - not_null
 
-      - name: salesterritory
-        description: This table represents the names of the territories.
-        columns:
-          - name: territoryid
-            description: Primary key of salesterritory table.
-            tests:
-              - unique
-              - not_null
-
       - name: customer
         description: This table represents customer.
         columns:

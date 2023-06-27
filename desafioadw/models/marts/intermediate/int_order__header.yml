@@ -5,7 +5,7 @@ models:
   - name: int_order__header
     description: Dimension with sales and orders data.
     columns:
-      - name: sk_salesorder
+      - name: sk_sales_order
         description: Table surrogate key.
         tests:
           - not_null
@@ -15,8 +15,8 @@ models:
         tests:
           - not_null
 
-      - name: id_territory
-        description: Territory identification table.
+      - name: id_bill_to_address
+        description: Bill to address identification table.
         tests:
           - not_null
 

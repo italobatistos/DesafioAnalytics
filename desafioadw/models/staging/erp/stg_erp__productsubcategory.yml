@@ -4,3 +4,12 @@ version: 2
 models:
   - name: stg_erp__productsubcategory
     description: Staging with product subcategory data.
+    columns:
+      - name: id_product_subcategory
+        description: Product subcategory identification table.
+
+      - name: id_product_category
+        description: Product category identification table.
+
+      - name: subcategory_name
+        description: Product subcategory name table.

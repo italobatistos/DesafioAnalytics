@@ -12,9 +12,9 @@ with
 
     , joined_orders as (
         select
-            orderdetail.id_salesorder
+            orderdetail.id_sales_order
             , orderheader.id_customer
-            , orderheader.id_territory
+            , orderheader.id_bill_to_address
             , orderheader.id_creditcard
             , orderdetail.id_product
             , orderheader.order_date
@@ -25,14 +25,13 @@ with
             , orderdetail.price_discount
             , orderheader.freight_fg                  
         from orderheader
-        left join orderdetail on
-            orderheader.id_salesorder = orderdetail.id_salesorder
+        left join orderdetail on orderheader.id_sales_order = orderdetail.id_sales_order
        
     )
 
     , transformations as (
         select
-            row_number() over (order by id_salesorder) as sk_salesorder
+            row_number() over (order by id_sales_order) as sk_sales_order
             , *
             , (unit_price * order_qty) as total_b
             , (unit_price * order_qty * (1-price_discount)) as total

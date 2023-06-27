@@ -4,3 +4,16 @@ version: 2
 models:
   - name: stg_erp__stateprovince
     description: Staging with state and province data.
+    columns:
+      - name: id_territory
+        description: Territory identification table.
+
+      - name: id_state_province
+        description: State province identification table.
+
+      - name: country_region_code
+        description: Country region code name table.
+
+      - name: state
+        description: State name table.
+          

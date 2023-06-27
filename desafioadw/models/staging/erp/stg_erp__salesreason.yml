@@ -4,3 +4,12 @@ version: 2
 models:
   - name: stg_erp__salesreason
     description: Staging with sales reason data.
+    columns:
+      - name: id_sales_reason
+        description: Sales reason identification table.
+
+      - name: reason_name
+        description: Reason name table.
+
+      - name: reason_type
+        description: Reason type table.

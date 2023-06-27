@@ -2,8 +2,8 @@
 with
     source_salesorderheadersalesreason as (
         select          		
-            cast(salesorderid as int) as id_salesorder
-            , cast(salesreasonid as int) as id_salesreason
+            cast(salesorderid as int) as id_sales_order
+            , cast(salesreasonid as int) as id_sales_reason
         from {{ source('erp','salesorderheadersalesreason') }}
     )
 

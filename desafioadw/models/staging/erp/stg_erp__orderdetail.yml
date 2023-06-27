@@ -4,3 +4,21 @@ version: 2
 models:
   - name: stg_erp__orderdetail
     description: Staging with order detail data.
+    columns:
+      - name: id_sales_order
+        description: Sales order identification table.
+
+      - name: id_order_detail
+        description: Order detail identification table.
+
+      - name: id_product
+        description: Product identification table.
+      
+      - name: order_qty
+        description: Order quantity table.
+      
+      - name: unit_price
+        description: Unit price products table.
+
+      - name: price_discount
+        description: Discount price products table.

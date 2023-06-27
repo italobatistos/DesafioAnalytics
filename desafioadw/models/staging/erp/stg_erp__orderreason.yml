@@ -4,3 +4,9 @@ version: 2
 models:
   - name: stg_erp__orderreason
     description: Staging with order reason data.
+    columns:
+      - name: id_sales_order
+        description: Sales order identification table.
+
+      - name: id_sales_reason
+        description: Sales reason identification table.
