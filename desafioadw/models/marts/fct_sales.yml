@@ -25,16 +25,6 @@ models:
         description: Person identification table.
         tests:
           - not_null
-      
-      - name: id_address
-        description: Address identification table.
-        tests:
-          - not_null
-
-      - name: id_state_province
-        description: State province identification table.
-        tests:
-          - not_null
 
       - name: id_creditcard
         description: Creditcard identification table.

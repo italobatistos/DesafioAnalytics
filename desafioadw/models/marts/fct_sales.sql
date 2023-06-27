@@ -10,11 +10,6 @@ with
         from {{ ref('stg_erp__customer') }}
     )
 
-    , address_ad as (
-        select *
-        from {{ ref('stg_erp__address') }}
-    )
-
     , joined_orders as (
         select
             sales.id_sales_order
