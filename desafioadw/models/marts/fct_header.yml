@@ -2,41 +2,66 @@
 version: 2
 
 models:
-  - name: stg_erp__orderheader
-    description: Staging with order header data.
+  - name: fct_header
+    description: Dimension with header data.
     columns:
-      - name: id_sales_order
-        description: Sales order identification table.
+      - name: sk_sales_order
+        description: Table surrogate key.
+        tests:
+          - unique
+          - not_null
 
       - name: id_customer
         description: Customer identification table.
+        tests:
+          - not_null
       
       - name: id_bill_to_address
         description: Bill to address identification table.
+        tests:
+          - not_null
 
       - name: id_ship_method
         description: Ship method identification table.
+        tests:
+          - not_null
 
       - name: id_creditcard
         description: Creditcard identification table.
+        tests:
+
 
       - name: order_date
         description: Order date table.
+        tests:
+          - not_null
       
       - name: sub_total
         description: Subtotal table.
+        tests:
+          - not_null
 
       - name: tax_amt
         description: Tax amount table.
+        tests:
+          - not_null
 
       - name: freight_fg
         description: Freight table.
+        tests:
+          - not_null
       
       - name: total_due
         description: Total due table.
+        tests:
+          - not_null
 
       - name: status_st
         description: Status table.
+        tests:
+          - not_null
       
       - name: orderflag
         description: orderflag identification table.
+        tests:
+          - not_null
