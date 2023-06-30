@@ -15,11 +15,11 @@ A seguinte empresa contratou você: Adventure Works (AW), uma indústria de bici
 A Adventure Works possui um banco de dados transacional (PostgreSQL) que armazena os dados de suas diferentes áreas. Esses dados estão distribuídos em 68 tabelas divididas em 5 schemas: HR (recursos humanos), sales (vendas), production (produção) e purchasing (compras).
 
 ### Descrição dos dados
-###1### - Diagrama conceitual do data warehouse em formato PDF: crie o modelo conceitual com as tabelas de fatos e dimensões necessárias para responder às perguntas de negócio do item 4. Mostrar de forma resumida quais as tabelas fonte que foram utilizadas para criar cada dimensão e a tabela fato. (Sugestão de ferramenta: draw.io)
+1 - Diagrama conceitual do data warehouse em formato PDF: crie o modelo conceitual com as tabelas de fatos e dimensões necessárias para responder às perguntas de negócio do item 4. Mostrar de forma resumida quais as tabelas fonte que foram utilizadas para criar cada dimensão e a tabela fato. (Sugestão de ferramenta: draw.io)
 
-###2### - Configuração de um data warehouse na nuvem e configuração do dbt. Sugestão: Google Bigquery e dbt Cloud.
+2 - Configuração de um data warehouse na nuvem e configuração do dbt. Sugestão: Google Bigquery e dbt Cloud.
     
-###3### - Transformação de dados: transforme os dados brutos utilizando o dbt (sugestão: dbt Cloud). Essa transformação deve incluir os seguintes pontos:
+3 - Transformação de dados: transforme os dados brutos utilizando o dbt (sugestão: dbt Cloud). Essa transformação deve incluir os seguintes pontos:
 
 a - documentação das tabelas e colunas nos marts
 
@@ -31,7 +31,7 @@ d - teste de dados (lembro do pedido do Carlos)
 
 e - O código precisa estar em um repositório (sugestão: github). Você deve disponibilizar o link do repositório no Github.
 
-###4### - Painéis de BI: crie em uma ferramenta à sua escolha, mas que permita você responder as seguintes perguntas de negócio:
+4 - Painéis de BI: crie em uma ferramenta à sua escolha, mas que permita você responder as seguintes perguntas de negócio:
 
 a - Qual o número de pedidos, quantidade comprada, valor total negociado por produto, tipo de cartão, motivo de venda, data de venda, cliente, status, cidade, estado e país?
 
@@ -45,7 +45,7 @@ e - Qual o número de pedidos, quantidade comprada, valor total negociado por m�
 
 f - Qual produto tem a maior quantidade de unidades compradas para o motivo de venda “Promotion”?
     
-###5### - Vídeo: você deverá gravar um vídeo apresentando todas as etapas do projeto (DW, EL, transformação em dbt e BI). Crie com alguma ferramenta de gravação, como o Nimbus ou OBS Studio. O vídeo não deve ter duração maior que 10 minutos. Você pode usar o youtube ou outro portal se desejar.
+5 - Vídeo: você deverá gravar um vídeo apresentando todas as etapas do projeto (DW, EL, transformação em dbt e BI). Crie com alguma ferramenta de gravação, como o Nimbus ou OBS Studio. O vídeo não deve ter duração maior que 10 minutos. Você pode usar o youtube ou outro portal se desejar.
 
 ### Ferramentas utilizadas
 - DBT -  Ferramenta de transformação de Dados.
