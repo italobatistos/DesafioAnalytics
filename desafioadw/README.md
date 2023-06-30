@@ -22,9 +22,13 @@ A Adventure Works possui um banco de dados transacional (PostgreSQL) que armazen
 3 - Transformação de dados: transforme os dados brutos utilizando o dbt (sugestão: dbt Cloud). Essa transformação deve incluir os seguintes pontos:
 
 a - documentação das tabelas e colunas nos marts
+
 b - testes de sources
+
 c - testes nas primary keys das tabelas de dimensão e fatos
+
 d - teste de dados (lembro do pedido do Carlos)
+
 e - O código precisa estar em um repositório (sugestão: github). Você deve disponibilizar o link do repositório no Github.
 
 4 - Painéis de BI: crie em uma ferramenta à sua escolha, mas que permita você responder as seguintes perguntas de negócio:
@@ -47,8 +51,4 @@ f - Qual produto tem a maior quantidade de unidades compradas para o motivo de v
 - DBT -  Ferramenta de transformação de Dados.
 - GoogleBigQuery - Data Warehouse em Nuvem.
 - PowerBI - Ferramenta de BI.
-<<<<<<< HEAD
 - Draw.IO - Ferramenta de Desenho e Criação de Diagramas.
-=======
-- Draw.IO - Ferramenta de Desenho e Criação de Diagramas.
->>>>>>> main
