@@ -15,6 +15,7 @@ with
             sales.id_sales_order
             , sales.id_customer
             , customer.id_person
+            , sales.id_bill_to_address
             , sales.id_creditcard
             , sales.id_product
             , sales.order_date
