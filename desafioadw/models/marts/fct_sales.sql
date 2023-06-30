@@ -23,7 +23,10 @@ with
             , sales.order_qty
             , sales.unit_price
             , sales.price_discount
-            , sales.freight_fg                  
+            , sales.freight_fg 
+            , sales.freight_qty_per_id
+            , sales.tax_amt
+            , sales.tax_amt_qty_per_id               
         from sales
         left join customer on sales.id_customer = customer.id_customer
     )
@@ -34,6 +37,8 @@ with
             , *
             , order_qty * unit_price as total_bruto
             , (1-price_discount) * order_qty * unit_price as total_liquido
+            , (tax_amt/tax_amt_qty_per_id) as tax
+            , (freight_fg/freight_qty_per_id) as freight
         from joined_orders
     )
 

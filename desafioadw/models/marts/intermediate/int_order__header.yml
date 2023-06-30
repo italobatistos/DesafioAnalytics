@@ -62,3 +62,8 @@ models:
         description: Freight table.
         tests:
           - not_null
+
+      - name: tax_amt
+        description: tax amount table.
+        tests:
+          - not_null
