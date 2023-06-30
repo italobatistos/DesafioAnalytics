@@ -22,9 +22,18 @@ models:
 
       - name: order_date
         description: Order date table.
+      
+      - name: sub_total
+        description: Subtotal table.
+
+      - name: tax_amt
+        description: Tax amount table.
 
       - name: freight_fg
         description: Freight table.
+      
+      - name: total_due
+        description: Total due table.
 
       - name: status_st
         description: Status table.

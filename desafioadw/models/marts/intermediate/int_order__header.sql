@@ -23,6 +23,7 @@ with
             , orderdetail.order_qty
             , orderdetail.unit_price
             , orderdetail.price_discount
+            , orderheader.tax_amt
             , orderheader.freight_fg                  
         from orderheader
         left join orderdetail on orderheader.id_sales_order = orderdetail.id_sales_order
@@ -35,6 +36,8 @@ with
             , *
             , (unit_price * order_qty) as total_b
             , (unit_price * order_qty * (1-price_discount)) as total
+            , count(tax_amt) over (partition by id_sales_order) as tax_amt_qty_per_id
+            , count(freight_fg) over (partition by id_sales_order) as freight_qty_per_id
         from joined_orders
     )
 

@@ -7,8 +7,11 @@ with
             , cast(billtoaddressid as int) as id_bill_to_address		
             , cast(shipmethodid as int) as id_ship_method			
             , cast(creditcardid as int) as id_creditcard
-            , cast(orderdate as datetime) as order_date															
-            , cast(freight as numeric) as freight_fg					
+            , cast(orderdate as datetime) as order_date	
+            , cast(subtotal as numeric) as sub_total
+            , cast(taxamt as numeric) as tax_amt														
+            , cast(freight as numeric) as freight_fg
+            , cast(totaldue as numeric) as total_due					
             , case
                 when status = 1 then 'In process'
                 when status = 2 then 'Aprroved'

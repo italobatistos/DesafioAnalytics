@@ -68,3 +68,18 @@ models:
         description: Freight table.
         tests:
           - not_null
+      
+      - name: freight_qty_per_id
+        description: Freight quantity per order id.
+        tests:
+          - not_null
+      
+      - name: tax_amt
+        description: Tax amount table.
+        tests:
+          - not_null
+      
+      - name: tax_amt_qty_per_id 
+        description: Tax amount quantity per order id.
+        tests:
+          - not_null
