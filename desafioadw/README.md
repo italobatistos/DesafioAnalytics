@@ -47,4 +47,8 @@ f - Qual produto tem a maior quantidade de unidades compradas para o motivo de v
 - DBT -  Ferramenta de transformação de Dados.
 - GoogleBigQuery - Data Warehouse em Nuvem.
 - PowerBI - Ferramenta de BI.
+<<<<<<< HEAD
 - Draw.IO - Ferramenta de Desenho e Criação de Diagramas.
+=======
+- Draw.IO - Ferramenta de Desenho e Criação de Diagramas.
+>>>>>>> main
