@@ -26,6 +26,11 @@ models:
         tests:
           - not_null
 
+      - name: id_bill_to_address
+        description: Bill to address identification table.
+        tests:
+          - not_null
+
       - name: id_creditcard
         description: Creditcard identification table.
 
@@ -113,3 +118,4 @@ models:
         description: Product subcategory name table.
         tests:
          - not_null
+

@@ -25,7 +25,6 @@ with
             sales.id_sales_order
             , sales.id_customer
             , customer.id_person
-            , customer.id_business_entity
             , sales.id_bill_to_address
             , sales.id_creditcard
             , sales.id_product

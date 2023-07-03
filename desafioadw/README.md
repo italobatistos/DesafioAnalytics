@@ -1,3 +1,4 @@
+
 ### Certificação em Analytics Engineer by Indicium
 
 ### A certificação:
@@ -65,3 +66,4 @@ A seguir um storytelling básico para guiar o seu vídeo, você pode por mais in
 - GoogleBigQuery - Data Warehouse em Nuvem.
 - PowerBI - Ferramenta de BI.
 - Draw.IO - Ferramenta de Desenho e Criação de Diagramas.
+
