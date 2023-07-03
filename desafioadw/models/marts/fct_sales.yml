@@ -88,3 +88,34 @@ models:
         description: Tax amount quantity per order id.
         tests:
           - not_null
+      
+      - name: city
+        description: City name table.
+        tests:
+          - not_null
+
+      - name: state
+        description: State name table.
+        tests:
+          - not_null
+    
+      - name: country
+        description: Country name table.
+        tests:
+          - not_null
+
+      - name: product_name
+        description: Product name table.
+        tests:
+          - not_null
+
+      - name: product_category_name
+        description: Product category name table.
+        tests:
+          - not_null
+
+      - name: subcategory_name
+        description: Product subcategory name table.
+        tests:
+         - not_null
+
