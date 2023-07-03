@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: stg_erp__personcreditcard
+    description: Staging with person creditcard data.
+    columns:    
+      - name: id_business_entity	
+        description: Business entity identification key.
+
+      - name: id_creditcard
+        description: Creditcard identification key.
