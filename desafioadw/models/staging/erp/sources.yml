@@ -135,3 +135,12 @@ sources:
             tests:
               - unique
               - not_null
+
+      - name: personcreditcard
+        description: This table represents person creditcard description.
+        columns:
+          - name: businessentityid
+            description: Primary key of business entity table.
+            tests:
+              - unique
+              - not_null

@@ -13,3 +13,9 @@ models:
 
       - name: cardtype_name
         description: Card type name table.
+
+      - name: id_business_entity
+        description: Business entity identification.
+        tests:
+          - unique
+          - not_null
